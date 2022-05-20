@@ -1,0 +1,9 @@
+FLAGS = -g
+
+all: vis
+
+vis: vis.c
+	gcc $(FLAGS) vis.c -o vis -lm
+
+clean:
+	rm -f *.o vis
